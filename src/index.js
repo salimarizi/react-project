@@ -12,6 +12,10 @@ import {
 //pages
 import LandingPage from './pages/App';
 import ProductPage from './pages/Product';
+import AuthPage from './pages/Auth';
+import AdminCategoryPage from './pages/Admin/Category';
+import AdminProductPage from './pages/Admin/Products/Index';
+import AdminProductCreatePage from './pages/Admin/Products/Create';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +23,10 @@ root.render(
     <Routes>
       <Route path="/" element={<LandingPage />}/>
       <Route path="/products" element={<ProductPage />}/>
+      <Route path="/admin/categories" element={<AdminCategoryPage />}/>
+      <Route path="/admin/products" element={<AdminProductPage />}/>
+      <Route path="/admin/products/create" element={<AdminProductCreatePage />}/>
+      <Route path="/auth" element={<AuthPage />}/>
     </Routes>
   </Router>
 );
